@@ -20,3 +20,4 @@ git push -u origin main / Ele faz o envio do primeiro commit para o repositorio 
 COMANDOS ADICIONAIS
 
 git checkout . /Desfaz todas as mudanças locais
+git pull /Ele puxa alterações na branch
