@@ -1,6 +1,6 @@
 COMANDOS DO DIA A DIA
 
-git status / Esse comando exibi todas as mudanças feitas no repositorio atual 
+ / Esse comando exibi todas as mudanças feitas no repositorio atual 
 git add . / Esse comando adiciona todas as mudanças para estado "staged" "preparar"
 git commit -m "descrição da alteração" / cria um comentario com a descrição do que esta sendo alterado
 git push / Ele envia a alteração para o repositorio remoto (GitHub)
@@ -21,3 +21,4 @@ COMANDOS ADICIONAIS
 
 git checkout . /Desfaz todas as mudanças locais
 git pull /Ele puxa alterações na branch
+git clone https://github.com/GABRIELITO7/EstudosLogica.git /Clona um projeto do repositorio remoto para o computador local
