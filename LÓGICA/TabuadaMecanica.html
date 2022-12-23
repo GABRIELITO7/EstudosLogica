@@ -1,0 +1,38 @@
+<meta charset="UTF-8"> 
+<script>   
+
+function pl() 
+{document.write("<br>");}
+
+function txt(frase) 
+{document.write(frase); pl();}
+
+var numeroDeTabuadas = parseInt (prompt("QUANTAS TABUADAS DESEJA GERAR?"))
+var suporte = 1;
+var tabuadas = 0;
+
+while(suporte <= numeroDeTabuadas) {
+
+    var numero =parseInt(prompt("QUAL O NÚMERO QUE DESEJA MULTIPLICAR?"))
+    
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador++) { 
+    
+    document.write(numero + " x " + multiplicador + " = ");
+    txt(numero * multiplicador);
+    
+    }
+    pl();
+    suporte++;
+
+    console.log(numero ** numero)
+    
+}
+
+
+
+
+
+
+
+
+</script>

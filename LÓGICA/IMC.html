@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CALCULADORA DE IMC</title>
+   <style>
+      body {
+        background: #000000;
+        margin: 0;
+        color: aliceblue;
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      button{
+         background: green;
+         color: azure;
+         height: 50px;
+         width: 170px;
+         cursor: pointer ;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      input{
+border-radius: 8px;
+border-color: darkgrey;
+border-width: 10px;
+   
+
+      }
+
+    </style>
+</head>
+<body>
+   <h1>CALCULE SEU IMC</h1>
+   <label for="nome"><strong>Nome</strong></label>
+   <br>
+   <input type="text" id="nome" placeholder="Susu" name="nome">
+   <br>
+   <br>
+
+   <label for="peso"><strong>Peso</strong></label>
+   <br>
+   <input type="number" id="peso" placeholder="0,00kg" name="peso">
+   <br>
+   <br>
+
+   <label for="altura"><strong>Altura</strong></label>
+   <br>
+   <input type="number" id="altura" placeholder="0.00m" name="altura">
+   <br>
+   <br>
+   
+   <button onclick="calcular()">
+      CALCULAR
+   </button>
+
+</body>
+</html>
+
+<script>   
+
+function pl() {document.write("<br>");}
+
+function txt(txt) {document.write(txt); pl();}
+
+function Imc(altura, peso){
+
+    var imc = (Math.round(peso / (altura * altura)));
+    return imc;
+
+};
+
+function ClassificacaoDoImc(imc) {
+
+     if(imc>=18 && imc<=25) {
+        
+        return "Normal"
+
+     }
+
+     if(imc>25 && imc<=30) {
+        
+        return "Sobre peso"
+
+     }
+
+     if(imc>30 && imc<=40) {
+        
+        return "Obesidade"
+
+     }
+     if(imc>40) {
+        
+        return "Obesidade grave"
+
+     }
+
+
+}
+
+function calcular(){
+    var imputpeso = document.getElementById("peso");
+    var imputaltura = document.getElementById("altura");
+   var imputnome = document.getElementById("nome");
+
+   var nome = imputnome.value;
+    var peso = imputpeso.value; 
+    var altura = imputaltura.value; 
+    var imc = Imc(altura, peso)
+    var Classificacao = ClassificacaoDoImc(imc);
+    txt(nome + ", Seu Imc é " + imc);
+    txt(Classificacao)
+
+}
+
+</script> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

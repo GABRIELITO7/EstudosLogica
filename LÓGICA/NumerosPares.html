@@ -1,0 +1,31 @@
+<meta charset="UTF-8"> 
+<script>   
+
+    function pl() 
+    {document.write("<br>");}
+
+    function txt(frase) 
+    {document.write(frase); pl();}
+
+        for(let numeros = 1; numeros <= 10; numeros++) {
+
+        if(numeros %2!=0)
+             continue
+            txt("Numeros pares " + numeros )
+
+        }
+        pl()
+
+        for(let numeros = 10; numeros >= 0; numeros--) {
+
+        if(numeros %2==0)
+            continue
+        txt("Numeros impares " + numeros )
+
+        }
+        for(let numeros = 5; numeros <= 10; numeros+=5) {
+            txt(numeros)
+        }
+
+
+ </script>

@@ -1,0 +1,33 @@
+<meta charset="UTF-8"> 
+<script>   
+
+    function pl() 
+    {document.write("<br>");} 
+
+    function txt(frase) 
+    {document.write(frase); pl();} 
+
+    var cores = ["vermelhos","preto","branco"]
+    var indice = Math.round(Math.random()*cores.length)
+    var corEscolhida = cores[indice]
+    var tentativas = 1
+
+    while(tentativas <= 2) {
+        
+        var blaze = prompt("ESCOLHA UMA COR VERMELHO, PRETO OU BRANCO"); 
+         if(blaze == corEscolhida) {
+
+         txt ("Você acertou !! A cor escolhida foi " + corEscolhida); 
+        break;
+        } else {
+
+        txt("você errou")
+
+        }
+        tentativas++;
+    }
+
+   
+
+</script>
+

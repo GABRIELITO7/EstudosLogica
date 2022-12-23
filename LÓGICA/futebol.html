@@ -1,0 +1,26 @@
+<meta charset="UTF-8"> 
+<script>   
+
+function pl() 
+{document.write("<br>");}
+
+function txt(frase) 
+{document.write(frase); pl();}
+
+var vitórias = parseInt(prompt("VITÓRIAS DO SEU TIME"));
+var empates = parseInt(prompt("EMPATES DO SEU TIME"));
+var pontos = (vitórias * 3) + empates;
+
+txt("Seu time somou " + pontos + " pontos");
+
+if(pontos>=60) {
+    txt("Graças aos reforços que você trouxe, seu time acaba de conquistar o título!!")
+}
+if(pontos<=30) {
+    txt("Infelizmente você fez cagada no elenco e seu time está rebaixado para série B!!")
+}
+if(pontos>=31 && pontos<=59) {
+    txt("Infelizmente seu time só cumpriu tabela, procure reforços!!")
+}
+
+</script> 

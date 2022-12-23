@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>ADVINHE O NÚMERO</button>
+
+<script>
+
+var numeros = [2,7,19,05]
+var input = document.querySelector("input")
+input.focus();
+
+    function verifica() {
+
+        var achou = false;
+        for (posicao = 0; posicao < numeros.length; posicao++) {
+           
+            
+                if(input.value == numeros[posicao]) {
+
+                    alert("VOCÊ ACERTOU")
+                    var achou = true;
+                    break;
+
+                } 
+            }       
+                if(achou == false) {
+
+                    alert("VOCê ERROU!!")
+                    
+                }
+        
+    
+            input.value = "";
+            input.focus();
+    };
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+
+</script>

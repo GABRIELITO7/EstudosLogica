@@ -1,0 +1,1 @@
+git status - Esse comando exibi todas as mudanças feitas no repositorio atual 

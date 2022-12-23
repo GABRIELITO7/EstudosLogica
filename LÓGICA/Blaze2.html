@@ -1,0 +1,51 @@
+<meta charset="UTF-8"> 
+<script>   
+
+    function pl() 
+    {document.write("<br>");} 
+
+    function txt(frase) 
+    {document.write(frase); pl();} 
+
+   var vermelho = [1,2,3,4,5]
+   var branco = [0,10]
+   var preto = [6,7,8,9]
+   var numero = Math.round(Math.random()*10)
+   var tentativas = 1
+   var corEscolhida; 
+
+       if(vermelho.includes(numero)) {
+
+        corEscolhida = "vermelho"
+
+   }
+   if(preto.includes(numero)) {
+
+corEscolhida = "preto"
+
+}
+    if(branco.includes(numero)) {
+
+    corEscolhida = "branco"
+
+    }
+    console.log(corEscolhida)
+while( tentativas <= 2) {
+   var blaze = prompt("Escolha uma cor entre vermelho, preto e branco");
+
+    if(blaze == corEscolhida){
+
+        txt("VOCÊ ACERTOU!!")
+        break;
+
+    } else {
+
+        txt("VOCÊ ERROU!!!!");
+
+    }
+    tentativas++;
+}
+
+txt("A cor escolhida foi " + corEscolhida)
+</script>
+

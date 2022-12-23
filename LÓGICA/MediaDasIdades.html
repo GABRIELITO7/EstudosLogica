@@ -1,0 +1,25 @@
+<meta charset="UTF-8"> 
+<script>   
+
+function pl() 
+{document.write("<br>");}
+
+function txt(frase) 
+{document.write(frase); pl();}
+
+    var QF = parseInt(prompt("Quantidade de familiares que vive na sua casa?"));
+    var S = 1; //Suporte para a contagem do número de familiares
+    var TIF = 0; //Total das idades dos familiares
+
+while(S <= QF) {
+
+    var IF = parseInt(prompt("Idades dos familiares?"));
+    TIF = TIF + IF;
+    S = S + 1;
+}
+    var media = Math.round(TIF/QF);
+    txt("A média das idades é " + media);
+   
+</script> 
+
+

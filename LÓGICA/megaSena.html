@@ -1,0 +1,54 @@
+<meta charset ="UTF-8">
+
+
+
+<script> 
+
+var numeros = []
+
+//     for(var posicao = 0; posicao < 6; posicao++) {
+
+//         var numeroSorteado = Math.round(Math.random()* 60);
+//         console.log(numeroSorteado)
+
+//         if(numeroSorteado === 0) {
+            
+//             numeroSorteado = Math.round(Math.random()* 60);
+//             console.log(numeroSorteado + " numero substituido pelo zero")
+//         }
+
+//         if(!numeros.includes(numeroSorteado)) {
+    
+//         numeros.push(numeroSorteado)
+
+//         } 
+
+// }
+
+     while (numeros.length < 6) {
+        
+        var numeroSorteado = Math.round(Math.random()* 60);
+        console.log(numeroSorteado)
+        if(numeroSorteado === 0) {
+            
+            continue
+            
+        }
+
+        if(!numeros.includes(numeroSorteado)) {
+    
+        numeros.push(numeroSorteado)
+
+        } 
+
+    }
+     
+    document.writeln("Os numeros sorteados foram:")
+    for(var posicao = 0; posicao < numeros.length; posicao++) {
+
+    document.write(numeros[posicao] + " ")
+
+    }
+
+
+</script>

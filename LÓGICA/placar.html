@@ -1,0 +1,42 @@
+<meta charset="UTF-8"> 
+<script>   
+
+function pl() 
+{document.write("<br>");}
+
+function txt(frase) 
+{document.write(frase); pl();}
+
+var team1 =prompt("Escolha o time da casa")
+var team2 =prompt("Escolha o time visitante")
+
+
+txt(team1);
+txt('<input type="number" id="team1" placeholder="0" name="placar">')
+txt("x")
+txt('<input type="number" id="team2" placeholder="0" name="placar">')
+txt(team2);
+txt('<button onclick="calcularPlacar()"> CALCULAR </button>')
+
+function calcularPlacar() {
+
+    var inputTeam1= document.getElementById("team1");
+    var inputTeam2 = document.getElementById("team2");
+    var golsTeam1 = inputTeam1.value;
+    var golsTeam2 = inputTeam2.value;
+
+    if (golsTeam1 > golsTeam2) { 
+txt(team1 + " venceu")
+    }
+
+    if (golsTeam1 == golsTeam2) { 
+txt(team1 + " e " + team2 + " empataram")
+    }
+
+    if (golsTeam1 < golsTeam2) { 
+txt(team2 + " venceu")
+    }
+
+
+}
+</script> 
