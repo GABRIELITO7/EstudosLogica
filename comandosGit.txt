@@ -13,4 +13,10 @@ git init / Esse comando cria um repositorio git local
 git branch -M main / Renomeia a branch para o nome apontado após a flag
 git remote add origin https://github.com/GABRIELITO7/PROJETOS-.git / Ele vincula o git local ao repositorio remoto
 git push -u origin main / Ele faz o envio do primeiro commit para o repositorio remoto
+ 
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+COMANDOS ADICIONAIS
+
+git checkout . /Desfaz todas as mudanças locais
